@@ -13,3 +13,48 @@
         min-height: 100vh;
         background: #595Db8;
     }
+
+    .sortable-list{
+        background: #fff;
+        width: 445px;
+        border-radius: 6px;
+        padding: 30px 25px 20px;
+    }
+    .sortable-list .item{
+        list-style: none;
+        display: flex;
+        border-radius: 5px;
+        margin-bottom: 11px;
+        padding: 10px 13px;
+        align-items: center;
+        border: 1px solid #ccc;
+        justify-content: space-between;
+    }
+
+    .items .details{
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
+    }
+
+    .item .details img{
+        width: 43px;
+        height: 43px;
+        margin-right: 12px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .item .details span{
+        font-size: 1.13rem;
+    }
+
+    .item i{
+        color: #474747;
+        font-size: 1.13rem;
+    }
+
+    .item.dragging :where(.details, i){
+        opacity: 0;
+
+    }
